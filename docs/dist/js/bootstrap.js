@@ -2029,7 +2029,7 @@ if (typeof jQuery === 'undefined') {
   // ====================
 
   var Tab = function (element) {
-    this.element = $(element)
+    this.$element = $(element)
   }
 
   Tab.VERSION = '3.3.4'
@@ -2037,7 +2037,7 @@ if (typeof jQuery === 'undefined') {
   Tab.TRANSITION_DURATION = 150
 
   Tab.prototype.show = function () {
-    var $this    = this.element
+    var $this    = this.$element
     var $ul      = $this.closest('ul:not(.dropdown-menu)')
     var selector = $this.data('target')
 
